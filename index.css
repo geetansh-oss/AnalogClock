@@ -1,0 +1,53 @@
+body {
+  background-color: silver;
+}
+.head {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 3px;
+    margin: 15px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 30px;
+text-shadow: 2px grey;
+}
+#clock {
+  position: relative;
+  margin: auto;
+  margin-top: 2%;
+  height: 40vw;
+  width: 40vw;
+  background-image: url(clock.png);
+  background-size: cover;
+  background-color: #919191;
+  border-radius: 50%;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(87, 86, 86),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background-color: black;
+  left: 49.5%;
+  transform-origin: bottom;
+}
+#hour {
+  top: 33.5%;
+  height: 17%;
+  width: 1%;
+  border-radius: 10px;
+}
+#minute {
+  top: 25.5%;
+  height: 25%;
+  width: 1%;
+  border-radius: 10px;
+}
+#second {
+  top: 17.5%;
+  height: 33%;
+  width: 1%;
+  border-radius: 10px;
+  background-color: red;
+}
